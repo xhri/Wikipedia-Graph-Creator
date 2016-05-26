@@ -19,7 +19,12 @@ def row_column_delete(matrix, number):
 
 
 def help_message():
-    print("wikipediaCrawler.py v.", 2)
+    print("wikipedia_crawler.py v.", 2)
+    print("script allow you to delete vertices in intelligent way")
+    print("It delete c% first of links from every site, segregated ascending by vertex's degree,")
+    print("with r% of deleting random vertex from that list(not the next one).")
+    print("Afterwards it can delete randomly d% of vertices")
+    print("It can also delete vertices with 0 edges attached with option -e")
     print("Available options:")
     print("-h  --->  Help")
     print("-w  --->  title of polish Wikipedia site to crawl")
@@ -27,9 +32,9 @@ def help_message():
     print("-l  --->  name of file with serialized graph to Load")
     print("-s  --->  name of the file to Save serialized graph")
     print("-g  --->  name of the file to save Graph")
-    print("-c  --->  (90-w/0-l) percent of graph to Clear with heuristics")
-    print("-r  --->  (10) chance of deleting Random vertex in graph in  heuristic method")
-    print("-d  --->  (0) percent of vertices to be Deleted randomly after heuristics")
+    print("-c  --->  (90-w/0-l) percent of graph to Clear with intelligent delete")
+    print("-r  --->  (10) chance of deleting Random vertex in graph in  intelligent method")
+    print("-d  --->  (0) percent of vertices to be Deleted randomly after intelligent")
     print('-e  --->  if Empty(without edges) vertices will be removed')
     sys.exit()
 
